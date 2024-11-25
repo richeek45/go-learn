@@ -1,0 +1,6 @@
+I would like to start this story with expressing my joy of learning Go. Seems good so far. I am familiar with the syntax because I have learned previously the basics. But my basics are still very weak as of now. But I am not worrying much about it for now. Let's see how far can I get. I would like to work on building tools in go and building complex web application. Understanding is the crucial part. I am not thinking too much as of now. I just want to get things done. Basic syntax, learning framework, deploying etc. etc.
+
+[Edit]
+This is to check if the editing works. But it's a fine tutorial for learning the basics of Go. As a beginner, I feel this kind of tutorials are much needed for learning new languages. I like this idea of creating local saved text files and editing over http requests.
+
+Thanking you, Richeek.
