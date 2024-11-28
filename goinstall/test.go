@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"errors"
 	"fmt"
 	"log"
 	"net/http"
@@ -154,5 +155,12 @@ func main() {
 	// router.HandleFunc("/static", serveStatic)
 	// router.HandleFunc("/", serveDynamic)
 	fmt.Println("Everything is set up!")
-	http.ListenAndServe(Port, nil)
+	err = http.ListenAndServe(Port, nil)
+
+	if errors.Is(err, http.ErrServerClosed) {
+		fmt.Printf("server closed\n")
+	} else if err != nil {
+		fmt.Printf("error starting server: %s\n", err)
+		os.Exit(1)
+	}
 }
